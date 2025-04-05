@@ -1,6 +1,6 @@
 .logo-text {
-    background: rgb(255,255,255);
-    background: -webkit-linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(243,6,243,1) 100%);
+    background: rgb(255, 255, 255);
+    background: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(243, 6, 243, 1) 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -85,13 +85,50 @@
 
     }
 }
-.social-area a .social-icon{
+
+.social-area a .social-icon {
     transition: background-color 1s;
 }
-.social-area a:hover .social-icon{
+
+.social-area button {
+    transition: background-color 1s;
+    cursor: pointer;
     background-color: #f306f3;
 }
-.social-area a:hover{
+
+.social-area a:hover .social-icon {
+    background-color: #f306f3;
+}
+
+.social-area button:hover .social-icon {
+    background-color: white;
+}
+
+.social-area a:hover {
     background-color: #f306f3;
     border-color: transparent;
+}
+
+.social-area button:hover {
+    background-color: black;
+}
+
+/* Side Panel For Big Screen */
+
+.side-panel-1 {
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: slideIn .4s ease-in-out
+}
+
+@keyframes slideIn {
+    from {
+        translate: 150vw 0;
+        /* opacity: 0; */
+    }
+
+    to {
+        translate: 100 100;
+        /* opacity: 1; */
+
+    }
 }
