@@ -4,3 +4,6 @@
   font-family: "Winky Sans", "Poppins", sans-serif;
   box-sizing: border-box;  
 }
+body{
+  overflow-x: hidden;
+}
